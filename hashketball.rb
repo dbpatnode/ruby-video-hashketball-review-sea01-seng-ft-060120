@@ -178,10 +178,11 @@ end
 # Build a method, player_numbers, that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
 
 def player_numbers(team_name)
+  team = nil
   jersey_numbers = []
   game_hash.each do  |home_away_hash, team_information_hash|
   if team_information_hash[:team_name] == team_name
-    jersey_numbers << team_information_hash
+    team = team_information_hash[:team_name]
     binding.pry
   end
   end
