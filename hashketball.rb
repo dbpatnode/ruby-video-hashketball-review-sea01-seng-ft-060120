@@ -174,5 +174,5 @@ def team_names
   #binding.pry
   end
   names
-  binding.pry
+  #binding.pry
 end
