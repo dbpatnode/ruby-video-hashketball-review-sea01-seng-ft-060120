@@ -184,7 +184,7 @@ def player_numbers(team_name)
       team_information_hash[:players].each do |players|
         players.each do |number, integer|
           if number == :number
-            jersey_numbers << number[:number]
+            jersey_numbers << integer
           binding.pry
         end
       end
