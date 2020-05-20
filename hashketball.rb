@@ -173,5 +173,5 @@ def team_names
   team_information_hash[:team_name]
   #binding.pry
   end
-  team_information_hash[team:name]
+  team_information_hash[:team_name]
 end
