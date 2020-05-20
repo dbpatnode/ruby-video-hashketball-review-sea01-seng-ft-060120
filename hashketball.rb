@@ -185,7 +185,7 @@ def player_numbers(team_name)
         players.each do |number, integer|
           if number == :number
             jersey_numbers << integer
-          binding.pry
+          #binding.pry
           end
         end
       end
