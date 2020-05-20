@@ -168,10 +168,11 @@ end
 
 # Build a method, team_names, that operates on the game Hash to return an Array of the team names.
 def team_names
-  
+  names = nil
   game_hash.each do |home_away_hash, team_information_hash|
-  team_information_hash[:team_name]
+  names = team_information_hash[:team_name]
   #binding.pry
   end
-  team_information_hash[:team_name]
+  names
+  binding.pry
 end
