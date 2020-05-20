@@ -183,7 +183,8 @@ def player_numbers(team_name)
     if team_information_hash[:team_name] == team_name
       team_information_hash[:players].each do |players|
         players.each do |number, integer|
-          if number == 
+          if number == :number
+            jersey_numbers << number[:number]
           binding.pry
         end
       end
