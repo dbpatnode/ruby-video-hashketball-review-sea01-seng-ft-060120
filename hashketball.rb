@@ -186,6 +186,7 @@ def player_numbers(team_name)
           if number == :number
             jersey_numbers << integer
           binding.pry
+          end
         end
       end
     end
