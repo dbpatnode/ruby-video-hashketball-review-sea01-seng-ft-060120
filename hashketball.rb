@@ -197,11 +197,11 @@ end
 #Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats
 
 def player_stats (player_name)
-  stats = {}
+  stats_hash = {}
   game_hash.each do |home_away_hash, team_information_hash|
-    team_information_hash[:players].each do |players_stats|
-      if players_stats[:player_name] == player_name
-        stats = player_stats
+    team_information_hash[:players].each do |stats|
+      if stats[:player_name] == player_name
+        stats_hash = player_stats
       binding.pry
       end
     end
