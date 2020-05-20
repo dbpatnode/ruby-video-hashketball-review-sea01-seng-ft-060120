@@ -176,3 +176,8 @@ def team_names
 end
 
 # Build a method, player_numbers, that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
+def player_numbers(team_name)
+  game_hash.each do  |home_away_hash, team_information_hash|
+
+  end
+end
