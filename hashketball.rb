@@ -201,7 +201,7 @@ def player_stats (player_name)
   game_hash.each do |home_away_hash, team_information_hash|
     team_information_hash[:players].each do |stats|
       if stats[:player_name] == player_name
-        stats = stats
+        stats_hash = stats
       binding.pry
       end
     end
