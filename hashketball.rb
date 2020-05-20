@@ -220,7 +220,8 @@ def big_shoe_rebounds
   rebounds = 0
   game_hash.each do |home_away_hash, team_information_hash|
     team_information_hash[:players].each do |stats|
-      
+      if 
+      end  
     end  
   end
 end
