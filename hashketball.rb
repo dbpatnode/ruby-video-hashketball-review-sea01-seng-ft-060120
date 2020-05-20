@@ -182,9 +182,9 @@ def player_numbers(team_name)
   game_hash.each do  |home_away_hash, team_information_hash|
     if team_information_hash[:team_name] == team_name
       team_information_hash[:players].each do |players|
-        players.each do |number, integer|
-          if number == :number
-            jersey_numbers << integer
+        players.each do |number_key, integer_value|
+          if number_key == :number
+            jersey_numbers << integer_value
           #binding.pry
           end
         end
