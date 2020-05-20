@@ -181,9 +181,9 @@ def player_numbers(team_name)
   team = nil
   jersey_numbers = []
   game_hash.each do  |home_away_hash, team_information_hash|
-  if team_information_hash[:team_name] == team_name
+    if team_information_hash[:team_name] == team_name
     team = team_information_hash[:team_name]
     binding.pry
-  end
+    end
   end
 end
