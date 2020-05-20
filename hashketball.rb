@@ -170,7 +170,7 @@ end
 def team_names
   names = []
   game_hash.each do |home_away_hash, team_information_hash|
-  names = team_information_hash[:team_name].flatten
+  names = team_information_hash[:team_name].merge
   #binding.pry
   end
   names
