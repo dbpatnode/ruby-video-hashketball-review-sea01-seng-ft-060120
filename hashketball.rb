@@ -166,4 +166,5 @@ def team_colors (team_name)
   colors
 end
 
+# Build a method, team_names, that operates on the game Hash to return an Array of the team names.
 def 
